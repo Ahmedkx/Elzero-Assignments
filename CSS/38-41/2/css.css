@@ -1,0 +1,12 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: #efefef;
+    border-radius: 5px 50px;
+    box-shadow:0 0 10px 0px black inset ;
+}

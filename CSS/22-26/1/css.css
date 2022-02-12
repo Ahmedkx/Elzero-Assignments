@@ -1,0 +1,19 @@
+* {
+    font-family: 'ABeeZee';
+    font-size: 50px;
+    text-align: center;
+}
+
+div {
+    width: 1000px;
+    height: 150;
+    margin: auto;
+    border: 10px solid #ff5722;
+    padding: 30px;
+}
+
+p {
+    background-color: #dddddd;
+    border: inherit;
+    padding: inherit;
+}

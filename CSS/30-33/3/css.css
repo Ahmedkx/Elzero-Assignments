@@ -1,0 +1,34 @@
+* {
+    font-family: 'ABeeZee';
+    font-size: 20px;
+}
+
+.main {
+    list-style-type: none;
+    width: 400px;
+}
+
+.HTML,.CSS,.JavaScript {
+    background-color: #eeeeee;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+.CSS ol {
+    list-style-type: upper-roman;
+}
+
+.HTML ol li,.CSS ol li,.JavaScript ul li{
+    background-color: white;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.JavaScript ul li {
+    list-style-position: inside;
+}
+
+.JavaScript ul {
+    padding: 0px;
+}

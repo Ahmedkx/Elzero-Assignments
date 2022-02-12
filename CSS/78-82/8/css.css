@@ -1,0 +1,12 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+
+div+div ,p {
+    color: red
+    }
+
+/* div ~ div:not(:last-child) ,p{
+    color: red;
+} */

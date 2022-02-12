@@ -1,0 +1,42 @@
+* {
+    font-family: 'ABeeZee';
+    font-size: 30px;
+}
+
+body {
+    margin-left: 30%;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #eee;
+    width: 500px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+div::before {
+    content: '';
+    position: relative;
+    background-image: linear-gradient(to right,#F44336 50%,#009688 50%,#009688 100%);
+    width: 520px;
+    left: -20px;
+    height: 4px;
+    bottom: -59px;
+}
+
+.elzero {
+    caret-color: red;
+}
+
+.two {
+    color: rgb(0, 0, 0,50%);
+}
+
+.three {
+    color: rgb(0, 0, 0,50%);
+
+}

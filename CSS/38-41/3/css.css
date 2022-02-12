@@ -1,0 +1,75 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+.main {
+    width: 550px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.Basic,.Pro {
+    background-color: #eeeeee;
+    width: 200px;
+    height: 200px;
+}
+
+.Pro {
+    position: absolute;
+    top: 8px;
+    left: 670px;
+}
+
+.Or {
+    background-color: #03a9f4;
+    height: 200px;
+    width: 1px;
+    position: absolute;
+    top: 8px;
+    left: 650px;
+}
+
+
+p {
+    margin: 0px;
+}
+
+.p1,.p4 {
+    background-color: #03a9f4;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    width: 180px;
+    top: 10px;
+    left: 10px;
+    line-height: 30px;
+}
+
+.p2,.p5 {
+    background-color: #dddddd;
+    border-radius: 50%;
+    text-align: center;
+    height: 140px;
+    width: 140px;
+    line-height: 140px;
+    position: relative;
+    left: 30px;
+    top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.p3 {
+    background-color: #03a9f4;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 90px;
+    margin-left: -10px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}

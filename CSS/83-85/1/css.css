@@ -1,0 +1,9 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+@media print{
+    div{
+    font-size: 40px;
+    }
+}

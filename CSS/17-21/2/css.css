@@ -1,0 +1,17 @@
+* {
+    font-family: 'ABeeZee';
+    font-size: 100px;
+    text-align: center;
+}
+
+.one {
+    text-transform:uppercase;
+}
+
+.two {
+    text-transform: capitalize;
+}
+
+.three {
+    text-transform: lowercase;
+}

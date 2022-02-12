@@ -1,0 +1,23 @@
+* {
+    font-family: 'ABeeZee';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    align-content: space-between;
+}
+
+div div {
+    background-color: rgb(233,30,99);
+    color: white;
+    display: grid;
+    place-items: center;
+}

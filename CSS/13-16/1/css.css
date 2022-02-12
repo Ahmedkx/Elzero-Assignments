@@ -1,0 +1,20 @@
+* {
+    font-family: 'ABeeZee';
+    font-size: 20px;
+}
+
+.parent .child .title{
+    color: red;
+}
+
+.parent .title{
+    color: blue;
+}
+
+.parent p {
+    color: green
+}
+
+.title {
+    color: green;
+}

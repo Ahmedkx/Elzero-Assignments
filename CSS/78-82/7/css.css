@@ -1,0 +1,17 @@
+* {
+    font-family: 'ABeeZee';
+    padding: 0;
+    margin: 0;
+}
+
+div:first-child:not(.no-need,.no-need-2) > div:nth-last-of-type(2) {
+    color: red;
+}
+
+/* :first-child > :nth-child(5){
+    color:red; 
+} */
+
+/* h3 + h3 + div {
+    color: red;
+  } */

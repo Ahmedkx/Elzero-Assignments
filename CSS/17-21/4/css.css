@@ -1,0 +1,15 @@
+* {
+    font-family: 'ABeeZee';
+    font-size: 150px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #009688;
+    padding: 10px;
+    text-transform: capitalize;
+    border-bottom: 20px solid #00514a;
+    margin: auto 35%;
+}

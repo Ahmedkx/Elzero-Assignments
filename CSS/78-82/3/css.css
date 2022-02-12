@@ -1,0 +1,7 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+.baby:only-child {
+    color: red;
+}

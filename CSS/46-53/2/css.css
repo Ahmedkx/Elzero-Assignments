@@ -1,0 +1,25 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+.parent {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eeeeee;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.parent div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f44336;
+    width: calc(92%/3);
+    height: 40px;
+    color: white;
+    margin: 10px auto;
+}

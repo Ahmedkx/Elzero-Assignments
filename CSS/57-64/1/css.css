@@ -1,0 +1,32 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px 1fr;
+    gap: 5px 5px;
+  }
+
+  div {
+      background-color: #607D8B;
+  }
+
+  div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    counter-increment: Test;
+  }
+
+  div div::before {
+      content: 'Element ' counter(Test);
+      font-weight: bold;
+      color: white;
+      font-size: 30px;
+  }

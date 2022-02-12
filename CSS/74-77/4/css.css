@@ -1,0 +1,34 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+body {
+    display: grid;
+    place-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    font-size: 200px;
+    color: rgb(50,50,52);
+    font-weight: bold;
+}
+
+div .s {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(254,166,4);
+}
+
+div .s1 {
+    position: relative;
+    bottom: 68px;
+    left: 196px;
+}
+
+div .s2 {
+    position: relative;
+    bottom: 207px;
+    left: 85px;
+}

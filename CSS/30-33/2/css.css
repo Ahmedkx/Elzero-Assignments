@@ -1,0 +1,45 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+div {
+    width: 400px;
+    background-color: #eeeeee;
+    text-align: center;
+    border: 2px solid;
+    border-color: #f44336 #2196f3;
+    margin: 20px;
+    padding: 5px;
+}
+
+span {
+    position: absolute;
+    background-color: #2196f3;
+    width: 25px;
+    height: 20px;
+    color: white;
+}
+
+.top-left {
+    top: 15px;
+    left: 15px;
+    border-right: 2px solid #f44336;
+}
+
+.top-right {
+    top: 15px;
+    left: 425px;
+    border-left: 2px solid #f44336;
+}
+
+.bottom-left {
+    top: 95px;
+    left: 15px;
+    border-right: 2px solid #f44336;
+}
+
+.bottom-right {
+    top: 95px;
+    left: 425px;
+    border-left: 2px solid #f44336;
+}

@@ -1,0 +1,38 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #eeeeee;
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 50%;
+    counter-increment: members-counter;
+    margin-right: 20px;
+    box-shadow: 3px 5px #2196f3,-3px -5px #e91e63;
+}
+
+div::before {
+    content: counter(members-counter);
+    background-color: black;
+    color: white;
+    display: inline-block;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 38px;
+    position: absolute;
+    top: 2px;
+}
+
+div::after {
+    content: "Element";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: 39px;
+    left: 19px;
+}

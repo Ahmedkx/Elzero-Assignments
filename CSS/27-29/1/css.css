@@ -1,0 +1,45 @@
+* {
+    font-family: 'ABeeZee';
+    font-size: 20px;
+    text-align: center;
+}
+
+.main {
+    width: 800px;
+    padding: 0px;
+    background-color: #eeeeee;
+}
+
+
+p {
+    display: inline-block;
+    background-color: #dddddd;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: left;
+    font-weight: bold;
+}
+
+.FullWidth p {
+    margin-top: 15px;
+    width: calc(100% - 30px)
+;}
+
+.one p{
+    width: calc((100% - 60px)/3);
+}
+
+.two p{
+    width: calc((100% - 45px)/2);
+}
+
+.three p{
+    width: calc((100% - 75px)/4);
+}
+
+.clear {
+    clear: both;
+}

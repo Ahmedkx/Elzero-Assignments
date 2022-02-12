@@ -1,0 +1,20 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+div {
+    font-size: 0px!important;
+    background-color: #eeeeee!important;
+    text-align: center!important;
+    border-color: transparent!important;
+    font-weight: bold!important;
+    width: 400px;
+    margin: auto;
+}
+
+div::before {
+    content: "Elzero";
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}

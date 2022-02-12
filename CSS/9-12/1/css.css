@@ -1,0 +1,32 @@
+* {
+    font-family: 'ABeeZee';
+    font-size: 65px;
+}
+
+div {
+    text-align: center;
+    Align-items: center;
+    Box-sizing: border-box;
+    padding: 20px;
+    outline: 5px solid black;
+    margin: auto 20px;
+    display: inline-block;
+    background-color: #eee;
+}
+
+
+.div1 {
+    border: 5px solid red;
+}
+.div2 {
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+
+}
+.div3 {
+    border-top: 5px dashed  red;
+    border-bottom: 5px dashed  blue;
+    border-left: 5px dashed  yellow;
+    border-right: 5px dashed  green;}

@@ -1,0 +1,7 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+.child:Nth-child(2) {
+    color: red;
+}

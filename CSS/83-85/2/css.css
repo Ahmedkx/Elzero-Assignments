@@ -1,0 +1,42 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+div:not(.main) {
+    background-color: #eee;
+    width: 270px;
+    height: 105px;
+
+}
+h3 {
+    font-size: 21px;
+    color: rgb(92, 158, 235);
+    text-align: center;
+}
+
+h5 {
+    font-size: 15px;
+    text-align: center;
+    transform: translatey(-5px);
+}
+
+@media (max-width: 750px) {
+    .main {
+        flex-wrap: wrap;
+    }
+    h3 {
+        color: red;
+    }
+}
+@media (max-width: 560px) {
+    h3 {
+        color: black;
+    }
+}

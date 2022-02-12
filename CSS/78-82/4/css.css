@@ -1,0 +1,6 @@
+* {
+    font-family: 'ABeeZee';
+}
+body > div[title]:not(.no-need) {
+    color: red;
+}

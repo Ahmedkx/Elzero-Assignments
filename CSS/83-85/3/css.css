@@ -1,0 +1,62 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+body {
+    margin: 50px;
+    display: block;i
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,fr);
+    gap: 15px;
+    grid-template-areas: 
+    "one one one one one one"
+    "two two two three three three"
+    "four four four four four four";
+}
+
+div:not(.main) {
+    background-color: #eee;
+    text-align: center;
+}
+.one{ 
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three { 
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+h3{
+    color: rgb(92, 158, 235);
+}
+
+@media (max-width: 750px) {
+    .main {
+        grid-template-areas: 
+        "one one one one one one"
+        "two two three three four four";
+    }
+    h3 {
+        color: red;
+    }
+}
+@media (max-width: 560px) {
+    .main {
+        grid-template-areas: 
+        "one one one one one one"
+        "two two two two two two"
+        "three three three three three three"
+        "four four four four four four"; 
+    }
+    h3 {
+        color: black;
+    }
+}

@@ -1,0 +1,9 @@
+* {
+    font-family: 'ABeeZee';
+    font-size: 150px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 3px 3px #ed4134,6px 6px #2195f2,9px 9px #9929b1;
+}

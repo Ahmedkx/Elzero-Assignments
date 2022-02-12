@@ -1,0 +1,42 @@
+* {
+    font-family: 'ABeeZee';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 15px;
+}
+
+.parent div{
+    background-color: #009688;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .one {
+    width: 20px;
+}
+
+.parent .two {
+    width: 50%;
+    align-self: flex-start;
+}
+
+.parent .three {
+    width: 20px;
+}

@@ -1,0 +1,24 @@
+* {
+    font-family: 'ABeeZee';
+    font-size: 50px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    text-align: center;
+    font-weight: bold;
+    padding: 40px;
+    width: 600px;
+    border: 15px solid;
+    letter-spacing: 10px;
+    border-image: linear-gradient(to right, #F44336 20%,#2196F3 20%,#2196F3 40%,#4CAF50 40%,#4CAF50 60%,#E91E63 60%,#E91E63 80%,#673AB7 80%,#673AB7 100%)1;
+}
+
+div::first-letter {
+    color: red;
+}

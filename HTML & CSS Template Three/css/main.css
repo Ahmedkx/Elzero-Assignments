@@ -1,0 +1,144 @@
+/* Start Global Rules */
+*{
+    font-family: 'Almarai', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #2196f3;
+    --transition-delay: 0.3s;
+}
+html{
+    height: 1000px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Header Start */
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    font-weight: bold;
+    font-size: 26px;
+    height: 50px;
+    text-decoration: none;
+    color: var(--main-color);
+}
+.header ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header ul li {
+    position: relative;
+    height: 72px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.header ul li::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--main-color);
+    top: 0px;
+    left: -100%;
+    transition: var(--transition-delay);
+}
+.header ul li:hover{
+    background-color: #FAFAFA;
+}
+.header ul li:hover::before{
+    transform: translateX(100%);
+}
+.header ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding: 20px;
+    margin: 0 10px;
+    transition: var(--transition-delay);
+}
+.header ul li:hover a{
+    color: var(--main-color);
+}
+
+
+.header .megaMenu{
+    display: none;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.466);
+    top: 70px;
+    width: 100%;
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.header .megaMenu img{
+    width: 100%;
+}
+
+
+
+
+
+@media(max-width:767px){
+    .header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header ul li{
+        height: 40px;
+    }
+    .header ul li a{
+        font-size: 14px;
+        padding: 0;
+    }
+}
+/* Header end */
+/* Start landing */
+
+
+/* End landing */

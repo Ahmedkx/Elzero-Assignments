@@ -8,10 +8,10 @@
 }
 :root{
     --main-color: #2196f3;
+    --secondary-color: #ececec;
     --transition-delay: 0.3s;
     --main-padding-top: 100px;
     --main-padding-bottom: 100px;
-    --secondary-color: #ececec;
 }
 .center{
     display: flex;
@@ -368,6 +368,364 @@ img{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap: 40px;
+    text-align: center;
+}
+.features .card{
+    border: 1px solid #cccccc;
+}
+.features .image{
+    position: relative;
+}
+.features .image::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(244 64 54 / 60%);
+}
+.features .card:nth-child(2) .image::after{
+    background-color: rgb(0 150 136 / 60%);
+}
+.features .card:nth-child(3) .image::after{
+    background-color: rgb(3 169 244 / 60%);
+}
+.features .card h2{
+    position: relative;
+    font-size: 40px;
+    width: fit-content;
+    margin: auto;
+}
+.features .card h2::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+    height: 5px;
+    background-color: red;
+}
+.features .card:nth-child(2) h2::after{
+    background-color: #009688;
+}
+.features .card:nth-child(3) h2::after{
+    background-color: #03a9f4;
+}
+.features .card p{
+    font-size: 20px;
+    margin: 30px 0;
+    padding: 25px;
+    color: #777;
+    line-height: 2;
+}
+.features .card button{
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+    border:3px solid;
+    outline: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    color: #f44036;
+    border-color: #f44036;
+    background-color: transparent;
+    overflow: hidden;
+    transition: var(--transition-delay);
+}
+.features .card:nth-child(2) button{
+    color: #009688;
+    border-color: #009688;
+}
+.features .card:nth-child(3) button{
+    color: #03a9f4;
+    border-color: #03a9f4;
+}
+.features .card button::after{
+    content: "";
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    top: 50%;
+    left: -60%;
+    transform: translate(-50%,-50%);
+    background-color: #f44036;
+    z-index: -1;
+    transition: var(--transition-delay);
+}
+.features .card:nth-child(2) button:after{
+    background-color: #009688;
+}
+.features .card:nth-child(3) button:after{
+    background-color: #03a9f4;
+}
+.features .card:hover button::after{
+    left: 50%;
+}
+.features .card:hover button{
+    color: white;
+}
+/* End features */
+
+/* Start Testimonials */
+.testimonials{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background-color: var(--secondary-color);
+}
+.testimonials .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+}
+.testimonials .box{
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+.testimonials .box img{
+    position: absolute;
+    right: -10px;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid var(--secondary-color);
+}
+.testimonials .box h3{
+    margin-bottom: 10px;
+}
+.testimonials .box span{
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+.testimonials .box p{
+    margin-top: 10px;
+}
+.testimonials .box .rate .filled{
+    color: #ffc107;
+}
+/* End Testimonials */
+
+/* Start Team */
+.team{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+}
+.team .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+}
+.team .box{
+    position: relative;
+
+}
+.team .box:hover img{
+    filter: grayscale(100%);
+}
+.team .box:hover .info h3{
+    color: #818181;
+}
+.team .box:hover p{
+    color: #6f6f6f;
 }
 
-/* End features */
+.team .box::before,.team .box::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: calc(100% - 60px);
+    height: 100%;
+    transform: translateY(-50%);
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    z-index: -2;
+
+}
+.team .box::after{
+    background-color:#e4e4e4;
+    width: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+.team .box:hover::after{
+    width: calc(100% - 60px);
+}
+.team .box img{
+    width: calc(100% - 60px);
+    border-radius: 10px;
+    transition: var(--transition-delay);
+}
+.team .box .data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 60px;
+}
+.team .box .social{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.team .box .social a{
+    display: grid;
+    place-content: center;
+    width: 60px;
+    height: 30px;
+}
+.team .box .social i{
+    color: #777777;
+    transition: var(--transition-delay);
+}
+.team .box .social a:hover .fa-facebook-f{
+    color: #4267B2;
+}
+.team .box .social a:hover .fa-twitter{
+    color: #1DA1F2;
+}
+.team .box .social a:hover .fa-linkedin-in{
+    color: #0E76A8;
+}
+.team .box .social a:hover .fa-youtube{
+    color: #C4302B;
+}
+.team .box .info{
+    padding-left: 80px;
+
+}
+.team .box .info h3{
+    color: var(--main-color);
+    font-size: 22px;
+    margin-top: 22px;
+}
+.team .box .info p{
+    margin: 10px 0 25px;
+}
+/* End Team */
+/* Start Services */
+.services{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background-color: var(--secondary-color);
+}
+.services .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+}
+.services .box{
+    background-color: white;
+    text-align: center;
+    transition: var(--transition-delay);
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+    counter-increment: services;
+    position: relative;
+    overflow: hidden;
+}
+.services .box:hover{
+    transform: translateY(-10px);
+}
+.services .box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 0;
+    background-color: var(--main-color);
+    transition: 0.3s;
+}
+.services .box:hover::before{
+    width: 100%;
+}
+.services .box i{
+    display: block;
+    color: #d5d5d5;
+    margin: 30px auto 20px;
+}
+.services .box h3{
+    color: var(--main-color);
+    font-size: 25px;
+    margin: 20px 0 40px;
+}
+.services .box .info{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f9f9f9;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.services .box .info::before{
+    content: "0" counter(services);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    display: grid;
+    place-content: center;
+    padding-right: 15px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    z-index: 0;
+}
+.services .box .info::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 77px;
+    height: calc(100% + 0.4px);
+    width: 50px;
+    background-color: #d5d5d5;
+    transform: skewX(-30deg)
+}
+.services .box .info a::first-letter{
+    text-transform: uppercase;
+}
+.services .box .info a{
+    color: var(--main-color);
+}
+/* End Services */
+/* Start Skills */
+.our-skills{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+}
+.our-skills .container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+}
+.our-skills .skills .title{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.our-skills .skills .title span{
+    color: var(--main-color);
+    font-size: 12px;
+    padding: 3px 5px;
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+.our-skills .skills:nth-child(1) .progress{
+    background-color: red;
+    width: 50px;
+    height: 20px;
+}
+/* End Skills */
